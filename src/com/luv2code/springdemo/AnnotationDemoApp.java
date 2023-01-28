@@ -6,7 +6,7 @@ public class AnnotationDemoApp {
 
 	public static void main(String[] args) {
 		
-		// read spring config file 
+		// read spring config file 	
 		
 		ClassPathXmlApplicationContext context = 
 				new ClassPathXmlApplicationContext("applicationContext.xml");
@@ -17,6 +17,9 @@ public class AnnotationDemoApp {
 		
 		//call a method on the bean 
 		System.out.println(theCoach.getDailyWorkout());
+		
+		//call a method to getDaily Fortune
+		System.out.println(theCoach.getDailyFortune());
 		
 		//close context 
 		context.close();
